@@ -4,6 +4,7 @@
   "description": "A minimal portfolio with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
+    "prebuild": "node ./scripts/create-env.js",
     "build": "webpack --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js"
   },
