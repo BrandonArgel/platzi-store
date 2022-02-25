@@ -1,8 +1,6 @@
-import Template from '@templates/Template.js';
-import "@styles/main.css";
-import "@styles/styles.scss";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import "./styles/global.scss";
 
-(async function App() {
-  const main = null || document.getElementById('main');
-  main.innerHTML = await Template();
-})();
+ReactDOM.render(<App />, document.getElementById("app"));
