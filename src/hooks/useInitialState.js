@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API = 'https://us-central1-gndx-fake-api.cloudfunctions.net/api';
+const API = 'https://platzi-store-ts-api.herokuapp.com/api/v1';
 
 const useInitialState = () => {
   const [products, setProducts] = useState([]);
